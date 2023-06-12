@@ -1,0 +1,168 @@
+<!doctype html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<script src="js/form_val_hospital.js"></script>
+<title>Hospital Registration</title>
+<link rel="stylesheet" href="css/reset.css" type="text/css" />
+<link rel="stylesheet" href="css/styles.css" type="text/css" /> 
+<meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0" />
+</head>
+<body>
+<div id="container" class="width">
+    <header> 
+	<div class="width">
+	   <h1><a href="/">CLOUD ENABLED PERSONAL HEALTH CARD<strong></strong></a></h1></br></br></br></br>
+		<nav>
+    			<ul class="sf-menu dropdown">
+        	   <li><a href="index.html">HOME</a></li>
+	     	    <li><a href="services.html">Services</a></li>
+                    <li><a href="registration.jsp">Register</a></li>
+                    <li><a href="login.jsp">Login</a></li>
+		  </ul>
+              <div class="clear"></div>
+	  </nav>
+   	  </div>
+	<div class="clear"></div>
+    </header>
+    <div id="intro">
+	<div class="width">
+   
+            </div>
+	</div>
+    <div id="body" class="width">
+	  <section id="content" class="two-column with-right-sidebar">
+     <h2>Hospital Registration</h2>
+	   <fieldset>
+       <div>  
+               <form id="form" name="form" method="post" action="hospital_regd" onSubmit="return formValidation();">
+               <p><label for="password">Password:</label>
+                    <input name="password" type="password" id="password"/></p>
+                    <p><label for="hname">Hospital Name:</label>
+                    <input name="hname" id="hname" value="" type="text" /></p>
+                    <p><label for="address">Address:</label>
+                    <input name="address" type="text" id="address"/></p>
+                   
+             <p><label for="state">State:</label>
+                    <select name="state" size="1" id="state">
+          <option value="default">None</option>
+          <option>Odisha</option>
+          <option>WestBengal</option>
+          <option>Bihar</option>
+        </select></p>
+         <p><label for="pin">Pin:</label>
+                    <input name="pin" type="text" id="pin" /></p>
+                    <p><label for="mnumber1">Mobile number:</label>
+                    <input name="mnumber1" type="text" id="mnumber1"/></p>
+                     <p><label for="cperson">Contact Person:</label>
+                    <input type="text" name="cperson" value="" id="cperson" ></p>
+                     <p><label for="spec">Speciality:</label>
+                    <select name="spec" id="spec"  size="1">
+        <option value="default">None</option>
+                <option>Cardiology</option>
+		<option>Surgery</option>
+		<option>Neurology</option>
+                <option>Medicine</option>
+                <option>OB/GYN</option>
+                <option>Radiology</option>
+                <option>Anesthesia</option>
+                <option>Dermatology</option>
+                <option>Pathology</option>
+                <option>Anatomy</option>
+                <option>Critical care</option>
+                <option>Diagnostic imaging</option>
+                <option>E.N.T</option>
+                <option>E.S.D</option>
+                <option>Gynaecology</option>
+                <option>Haematology</option>
+                <option>Maternity</option>
+                <option>Nephrology</option>
+                <option>Ophthalmolgy</option>
+                <option>Orthopaedics</option>
+                
+      </select></p>
+       <p><input name="reghospital" style="margin-left: 150px;" class="formbutton" value="Register Hospital" type="submit" id="reghospital" /></p>
+
+                </form> 
+            </fieldset>
+
+		</section>
+<aside class="sidebar big-sidebar right-sidebar">
+		  <ul>
+		  <li>
+		    <h4>LINKS</h4>
+                    <ul class="blocklist">
+                        <li><a class="selected" href="index.jsp">Home</a></li>
+                        <li>
+                        <ul>
+					<li><a href="registration.jsp">Hospitals Registration</a></li>
+					<li><a href="registration.jsp">Lab Registration</a></li>
+					<li><a href="registration.jsp">Doctor Registration</a></li>
+                                        <li><a href="services.jsp">Services</a></li>
+				</ul>
+			</li>
+                                        
+                    </ul>
+                </li>
+ 	        <li>
+                    <h4>Other Links</h4>
+                    <ul>
+				<li><a href="#">Kalinga Hospital</a></li>
+				<li><a href="#">Apollo Hospital</a></li>
+				<li><a href="#">AIIMS</a></li>
+				<li><a href="#">KIIMS</a></li>
+                                <li><a href="#">SUM</a></li>
+			</ul>
+                </li>
+                
+            </ul>
+		
+        </aside>
+    	<div class="clear"></div>
+    </div>
+    <footer>
+        <div class="footer-content width">
+            <ul>
+            	<li>
+            	  <h4>About us</h4></li>
+                <li><a href="goal.jsp">Our goal </a></li>
+              
+            </ul>
+            
+            <ul>
+            	<li>
+            	  <h4>Patient services</h4></li>
+                <li><a href="geninfo.jsp">General Instruction</a></li>
+                <li><a href="admission.jsp">Admission Procedure </a></li>
+                <li><a href="health.jsp">Health Tips</a></li>
+               
+                
+            </ul>
+
+ 	    <ul>
+                <li><h4>Doctor Services</h4></li>
+                <li><a href="login.jsp">Find a Doctor</a></li>
+                <li><a href="login.jsp">Request for an Appointment</a></li>
+                <li><a href="registration.jsp">Online Registration</a></li>
+                <li>Ambulance number:108</li> 
+            </ul>
+            
+            <ul class="endfooter">
+            	<li><h4>Contact us</h4></li>
+                <li>Sweta Mukherjee</li>
+                <li>Dilnasin Parween</li>
+                <li>Kiran Senapati</li>
+                <li>Neha Bharadwaj</li>
+                                                              
+                <br />
+            </ul>
+            
+            <div class="clear"></div>
+        </div>
+        <div class="footer-bottom">
+           <p>&copy;Cloud Enabled Personal Health Card</p>
+         </div>
+    </footer>
+</div>
+</body>
+</html>
